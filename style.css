@@ -164,9 +164,14 @@ section {
     color: #333333;
 }
 
-.about-image {
-    text-align: center;
+.about-image img {
+    width: 100%;
+    height: 100%;       /* Fill the box height too */
+    object-fit: cover;  /* Crop the image so it fills the box without distortion */
+    border-radius: 10px; /* Match the box corners */
 }
+
+
 
 .image-placeholder {
     width: 300px;
@@ -463,10 +468,11 @@ section {
 }
 
 .cert-badge {
-    max-width: 150px;  /* adjust size (try 100px–180px) */
-    height: auto;      /* keeps aspect ratio */
-    margin: 0 auto 15px; /* centers image & adds spacing */
-    display: block;    /* ensures centering works */
+    max-width: 150px;   /* Adjust size (100–180px works well) */
+    height: auto;       /* Keeps aspect ratio */
+    margin: 0 auto 15px;
+    display: block;
+    border-radius: 8px; /* optional: soften edges */
 }
 
 
