@@ -463,9 +463,12 @@ section {
 }
 
 .cert-badge {
-    max-width: 120px;
-    margin-bottom: 15px;
+    max-width: 150px;  /* adjust size (try 100px–180px) */
+    height: auto;      /* keeps aspect ratio */
+    margin: 0 auto 15px; /* centers image & adds spacing */
+    display: block;    /* ensures centering works */
 }
+
 
 .cert-title {
     font-size: 18px;
