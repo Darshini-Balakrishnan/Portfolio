@@ -311,65 +311,37 @@ section {
     text-align: center;
 }
 
-.achievement-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.achievement-card-link {
+.cert-card-link {
     text-decoration: none;
     color: inherit;
     display: block;
 }
 
-.achievement-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
-    text-align: left;
-}
-
-.achievement-card:hover {
-    transform: translateY(-5px);
-}
-
-.achievement-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+.cert-card-link:hover,
+.cert-card-link:focus,
+.cert-card-link:visited,
+.cert-card-link:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 .achievement-badge {
     display: inline-flex;
     align-items: center;
-    align-self: flex-start;
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
     background: #f0f0f0;
     color: #466c24;
     font-size: 0.875rem;
     font-weight: 600;
-}
-
-.achievement-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-}
-
-.achievement-org {
-    font-size: 14px;
-    color: #666;
+    margin-bottom: 0.75rem;
 }
 
 .achievement-description {
     color: #333333;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.6;
+    margin-top: 0.75rem;
 }
 
 
@@ -469,14 +441,6 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .achievement-card {
-        padding: 20px;
-    }
-
-    .achievement-title {
-        font-size: 18px;
-    }
-
     .skills-grid {
         grid-template-columns: 1fr;
     }
@@ -522,21 +486,11 @@ section {
         flex-direction: column;
     }
 
-    .achievement-card {
-        padding: 1.5rem;
-        border-radius: 12px;
-    }
-
     .achievement-badge {
         font-size: 0.875rem;
         padding: 0.45rem 0.9rem;
     }
 
-    .achievement-title {
-        font-size: 18px;
-    }
-
-    .achievement-org,
     .achievement-description {
         font-size: 14px;
     }
